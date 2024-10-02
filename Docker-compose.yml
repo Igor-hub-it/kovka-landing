@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  nuxt-app:
+    build:
+      context: .  # Указываем, что Dockerfile находится в текущей директории
+    container_name: nuxt-app
+    ports:
+      - "3000:3000"  # Открываем порт 3000 для доступа к приложению
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - .:/app  # Монтируем директорию проекта внутрь контейнера
+    command: npm run start  # Запускаем приложение в режиме production
