@@ -10,6 +10,8 @@ COPY package*.json ./
 # Устанавливаем зависимости
 RUN npm install
 
+RUN chmod +x node_modules/.bin/nuxt
+
 # Копируем остальные файлы проекта
 COPY . .
 
