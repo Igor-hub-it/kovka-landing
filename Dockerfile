@@ -8,7 +8,8 @@ WORKDIR /app
 COPY package*.json ./
 
 # Устанавливаем зависимости
-RUN npm install
+# RUN npm install
+RUN npm install --only=prod --unsafe-perm
 
 # Копируем остальной код проекта
 COPY . .
