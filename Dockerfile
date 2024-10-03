@@ -1,17 +1,25 @@
-FROM node:16.10.0-alpine3.14
+# Используем официальный образ Node.js в качестве базового
+FROM node:18-alpine
 
-RUN addgroup app && adduser -S -G app app
-
-USER app
-
+# Устанавливаем рабочую директорию внутри контейнера
 WORKDIR /app
 
-COPY --chown=app:node package*.json ./
+# Копируем файлы package.json и package-lock.json
+COPY package*.json ./
 
+# Устанавливаем зависимости
 RUN npm install
 
-COPY --chown=app:node . .
+RUN chmod +x node_modules/.bin/nuxt
 
+# Копируем остальные файлы проекта
+COPY . .
+
+# Собираем приложение
+RUN npm run build
+
+# Указываем порт, который будет использоваться
 EXPOSE 3000
 
-CMD [“npm”, “start”]
+# Команда для запуска приложения
+CMD ["npm", "run", "start"]
