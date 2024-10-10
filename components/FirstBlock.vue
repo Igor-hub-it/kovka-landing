@@ -1,6 +1,6 @@
 <template>
     <div class="h-auto w-full py-48 relative flex justify-center bg-gradient-to-r from-[#A4BFDB] to-[#5C92CB]">
-        <div class="w-3/4 flex flex-col justify-center gap-3">
+        <div class="w-full lg:w-3/4 flex flex-col justify-center gap-3">
             <p class="text-4xl font-bold">Кованые изделия<br> собственного производства</p>
             <p class="text-3xl">Подчеркните индивидуальность<br> вашего пространства</p>
             <div class="flex gap-10">

@@ -6,8 +6,8 @@
                 <div v-for="product of productList" :key="product.text" class="">
                     <div class="w-full border border-black rounded">
                         <img class="min-h-64 max-h-64 w-full" :src="product.src" alt="">
-                        <div class="p-2">
-                            <p class="text-lg">{{ product.text }}</p>
+                        <div class="p-2 bg-white rounded">
+                            <p class="text-lg font-medium">{{ product.text }}</p>
                             <p>от 3{{ product.price }}&#8381; за шт</p>
                         </div>
                     </div>
