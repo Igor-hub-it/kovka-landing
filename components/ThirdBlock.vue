@@ -1,6 +1,6 @@
 <template>
     <div id="catalog" class="h-auto w-full py-20 flex flex-col justify-center items-center gap-3 border bg-[#F3FAFC]">
-        <div class="w-3/4 flex flex-col justify-center gap-3">
+        <!-- <div class="w-3/4 flex flex-col justify-center gap-3">
             <p class="text-5xl font-medium">Линейка товаров</p>
             <div class="mt-5 grid grid-cols-3 grid-rows-3 gap-5">
                 <div v-for="product of productList" :key="product.text" class="">
@@ -16,7 +16,7 @@
             <div class="h-6 w-fit px-10 py-5 flex justify-center items-center cursor-pointer rounded bg-white text-[#404040] border-[2px] border-[#404040] font-bold">
                 Весь каталог
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
 

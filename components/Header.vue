@@ -2,7 +2,7 @@
     <div class="h-12 lg:h-[162px] w-full flex justify-center items-center">
         <div class="w-full lg:w-3/4 h-[110px] flex justify-between">
             <div class="h-full flex items-center">
-                <img class="h-36" src="@/assets/img/logo.png" alt="Логотип холодная ковка Арт ковка">
+                <!-- <img class="h-36" src="@/assets/img/logo.png" alt="Логотип холодная ковка Арт ковка"> -->
                 <div class="ml-3">
                     <p class="text-xl font-semibold">Art-Kovka</p>
                     <p class="hidden lg:block text-sm font-medium leading-5">
