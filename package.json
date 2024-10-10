@@ -11,19 +11,20 @@
     "start": "nuxt start"
   },
   "dependencies": {
-    "vue": "latest",
-    "nuxt": "^3.13.0",
-    "vue-router": "latest",
     "autoprefixer": "^10.4.20",
+    "nuxt": "^3.13.0",
     "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.12"
+    "swiper": "^11.1.14",
+    "tailwindcss": "^3.4.12",
+    "vue": "latest",
+    "vue-router": "latest"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "nuxt": "^3.13.0",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.12",
     "vue": "latest",
-    "nuxt": "^3.13.0",
     "vue-router": "latest"
   }
 }

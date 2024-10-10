@@ -1,8 +1,8 @@
 <template>
     <div class="h-12 lg:h-[162px] w-full flex justify-center items-center">
-        <div class="w-full lg:w-3/4 h-[110px] flex justify-between">
+        <div class="w-full lg:w-3/4 h-[50px] lg:h-[110px] px-3 lg:px-0 flex justify-between items-center lg:items-stretch">
             <div class="h-full flex items-center">
-                <!-- <img class="h-36" src="@/assets/img/logo.png" alt="Логотип холодная ковка Арт ковка"> -->
+                <img class="h-12 lg:h-36" src="@/assets/img/logo.png" alt="Логотип холодная ковка Арт ковка">
                 <div class="ml-3">
                     <p class="text-xl font-semibold">Art-Kovka</p>
                     <p class="hidden lg:block text-sm font-medium leading-5">
@@ -34,6 +34,11 @@
                     <a @click="scrollTo('reviews')" class="cursor-pointer">Отзывы</a>
                     <a @click="scrollTo('footer')" class="cursor-pointer">Контакты</a>
                 </div>
+            </div>
+            <div class="flex flex-col h-fit gap-1 lg:hidden">
+                <div class="h-1 w-6 bg-[#404040] rounded"></div>
+                <div class="h-1 w-6 bg-[#404040] rounded"></div>
+                <div class="h-1 w-6 bg-[#404040] rounded"></div>
             </div>
         </div>
     </div>
