@@ -1,12 +1,14 @@
 <template>
   <div class="">
-    <headerVue/>
+    <HeaderVue/>
         <slot/>
+    <FooterVue/>
   </div>
 </template>
 
 <script setup lang="ts">
-import headerVue from "~/components/Header.vue";
+import FooterVue from "~/components/Footer.vue";
+import HeaderVue from "~/components/Header.vue";
 
 
 </script>

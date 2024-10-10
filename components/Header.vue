@@ -3,22 +3,24 @@
         <div class="w-3/4 h-[110px] flex justify-between">
             <div class="h-full flex items-center">
                 <img src="" alt="Логотип холодная ковка Арт ковка">
-                <p class="">
-                    Холодная ковка<br>
-                    под заказ
-                </p>
+                <div class="">
+                    <p class="text-base font-semibold">
+                        Холодная ковка<br>
+                        под заказ
+                    </p>
+                    <p class="text-xs">
+                        Произведено в <br>
+                        Алтайском Крае
+                    </p>
+                </div>
             </div>
             <div class="flex flex-col justify-between items-end">
                 <div class="flex gap-11 items-center">
                     <div class="flex gap-3">
                         <ClientOnly>
-                            <img src="@/assets/img/tg.png" alt="Телеграмм" class="w-6 h-6 cursor-pointer">
-                            <img src="@/assets/img/vk.png" alt="Группа ВК" class="w-6 h-6 cursor-pointer">
-                            <a
-                                :href="`https://wa.me/79520016626`"
-                            >
-                                <img src="@/assets/img/whatsapp.png" alt="WhatsApp" class="w-6 h-6 cursor-pointer">
-                            </a>
+                            <a href=""><img src="@/assets/img/tg.png" alt="Телеграмм" class="w-9 h-9 cursor-pointer"></a>
+                            <a href=""><img src="@/assets/img/vk.png" alt="Группа ВК" class="w-9 h-9 cursor-pointer rounded"></a>
+                            <a href="https://wa.me/79520016626"><img src="@/assets/img/whatsapp.png" alt="WhatsApp" class="w-9 h-9 cursor-pointer rounded"></a>
                         </ClientOnly>
                     </div>
                     <div class="">
@@ -27,10 +29,10 @@
                     </div>
                 </div>
                 <div class="flex gap-8">
-                    <a href="">О компании</a>
-                    <a href="">Каталог</a>
-                    <a href="">Отзывы</a>
-                    <a href="">Контакты</a>
+                    <a @click="scrollTo('about-us')" class="pointer">О компании</a>
+                    <a @click="scrollTo('catalog')" class="pointer">Каталог</a>
+                    <a @click="scrollTo('reviews')" class="pointer">Отзывы</a>
+                    <a @click="scrollTo('contacts')" class="pointer">Контакты</a>
                 </div>
             </div>
         </div>
@@ -38,6 +40,12 @@
 </template>
   
 <script setup lang="ts">
-import SvgIcon from './UI/SvgIcon.vue';
 
+const scrollTo = ((target: string) => {
+      const element = document.getElementById(target);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+) 
 </script>
