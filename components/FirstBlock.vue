@@ -1,7 +1,9 @@
 <template>
+
     <div class="text-6xl text-center mt-10">
-        <p>КЭРРИ ЛОХ &#128540;</p>
+        <p>ПОМОГИТЕ КЭРРИ НАЙТИ НОС &#128540;</p>
     </div>
+    <img src="@/assets/img/111.jpg" alt="">
     <!-- <div class="h-auto w-full py-20 lg:py-48 relative flex justify-center bg-gradient-to-r from-[#A4BFDB] to-[#5C92CB]">
         <div class="w-full lg:w-3/4 flex flex-col justify-center gap-3">
             <p class="text-4xl font-bold">Кованые изделия<br> собственного производства</p>
