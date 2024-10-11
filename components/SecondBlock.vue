@@ -1,6 +1,6 @@
 <template>
     <div id="about-us" class="h-auto w-3/4 py-20 flex flex-col justify-center gap-3">
-        <p class="text-5xl font-medium">Почему выбирают нас</p>
+        <p class="text-3xl lg:text-5xl font-medium">Почему выбирают нас</p>
         <div class="mt-5 flex flex-col lg:grid lg:grid-cols-2 gap-5">
             <div class="flex gap-2">
                 <p class="text-7xl font-bold">1</p>
@@ -31,9 +31,11 @@
                 </div>
             </div>
         </div>
-        <div class="h-6 w-fit px-10 py-5 flex justify-center items-center bg-[#5179BB] hover:bg-[#3a609d] duration-200 text-white cursor-pointer rounded">
-            Позвонить
-        </div>
+        <a href="tel: +7 952 001-66-26">
+            <div class="h-6 w-full lg:w-fit px-10 py-5 flex justify-center items-center bg-[#5179BB] hover:bg-[#3a609d] duration-200 text-white cursor-pointer rounded">
+                Позвонить
+            </div>
+        </a>
     </div>
 </template>
 
