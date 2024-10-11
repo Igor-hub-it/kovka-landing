@@ -1,5 +1,5 @@
 <template>
-    <div id="about-us" class="h-auto w-3/4 py-20 flex flex-col justify-center gap-3">
+    <div id="about-us" class="h-auto w-5/6 lg:w-3/4 py-20 flex flex-col justify-center gap-3">
         <p class="text-3xl lg:text-5xl font-medium">Почему выбирают нас</p>
         <div class="mt-5 flex flex-col lg:grid lg:grid-cols-2 gap-5">
             <div class="flex gap-2">

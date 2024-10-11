@@ -1,6 +1,6 @@
 <template>
     <div class="fixed lg:static h-12 lg:h-[162px] w-full flex justify-center items-center z-30 bg-white">
-        <div class="w-full lg:w-3/4 h-[50px] lg:h-[110px] px-3 lg:px-0 flex justify-between items-center lg:items-stretch">
+        <div class="w-full lg:w-3/4 h-[50px] lg:h-[110px] px-8 lg:px-0 flex justify-between items-center lg:items-stretch">
             <div class="h-full flex items-center">
                 <img class="h-12 lg:h-36" src="@/assets/img/logo.png" alt="Логотип холодная ковка Арт ковка">
                 <div class="ml-3">
