@@ -13,7 +13,7 @@
                         <img class="min-h-64 max-h-64 w-full" :src="product.src" alt="">
                         <div class="p-2 bg-white rounded">
                             <p class="text-lg font-medium">{{ product.text }}</p>
-                            <p>от 3{{ product.price }}&#8381; за шт</p>
+                            <p>от {{ product.price }}&#8381; за шт</p>
                         </div>
                     </div>
                     <img class="w-10 absolute bottom-4 right-5 z-10 " src="@/assets/gif/swipe-left.gif" alt="">
