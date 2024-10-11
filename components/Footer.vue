@@ -6,8 +6,8 @@
                 <a href="mailto:art-kovka22@mail.ru">art-kovka22@mail.ru</a>
             </div>
             <div class="flex gap-4">
-                <a href=""><img src="@/assets/img/tg.png" alt="Телеграмм" class="w-9 h-9 cursor-pointer"></a>
-                <a href=""><img src="@/assets/img/vk.png" alt="Группа ВК" class="w-9 h-9 cursor-pointer rounded"></a>
+                <a href="https://web.telegram.org/k/#1711641153"><img src="@/assets/img/tg.png" alt="Телеграмм" class="w-9 h-9 cursor-pointer"></a>
+                <a href="https://vk.com/art_kovka22"><img src="@/assets/img/vk.png" alt="Группа ВК" class="w-9 h-9 cursor-pointer rounded"></a>
                 <a href="https://wa.me/79520016626"><img src="@/assets/img/whatsapp.png" alt="WhatsApp" class="w-9 h-9 cursor-pointer rounded"></a>
             </div>
             <div class="">Алтайский край. г.Барнаул</div>
