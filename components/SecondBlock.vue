@@ -1,46 +1,73 @@
 <template>
-    <div id="about-us" class="h-auto w-5/6 lg:w-3/4 py-20 flex flex-col justify-center gap-3">
-        <p class="text-3xl lg:text-5xl font-medium">Почему выбирают нас</p>
-        <div class="mt-5 flex flex-col lg:grid lg:grid-cols-2 gap-5">
-            <div class="flex gap-2">
-                <p class="text-7xl font-bold">1</p>
-                <div class="">
-                    <p class="text-2xl">Работаем<br> без посредников</p>
-                    <p class="text-base">Собственное производство<br> позволяет сохранять<br> минимальные цены</p>
+    <div 
+        id="about-us" 
+        class="h-auto w-full lg:w-full py-10 lg:py-20 flex justify-center"
+        :style="{ backgroundImage: `url(${backgroundImg})` }"
+    >
+        <div class="w-5/6 lg:w-3/5 flex flex-col justify-between gap-3">
+            <p class="text-3xl lg:text-5xl font-medium">Почему выбирают нас</p>
+            <div 
+                class="lg:mt-5 grid grid-cols-1 lg:grid-cols-2 gap-3 relative"
+                style="grid-auto-rows: minmax(150px, auto);"
+            >
+                <!-- Карточки -->
+                <div 
+                    v-for="(item, index) in items" 
+                    :key="index" 
+                    :class="[ 
+                        'w-full p-4 bg-[#FFD8A6] rounded-3xl shadow-lg flex flex-col gap-3', 
+                        'relative', 
+                        index % 2 !== 0 ? 'lg:top-1/2' : '' 
+                    ]"
+                >
+                    <div class="flex flex-col justify-between gap-3">
+                        <p class="text-2xl font-medium leading-7" v-html="item.title"></p>
+                        <p class="text-base leading-5" v-html="item.description"></p>
+                    </div>
+                    <!-- Иконка -->
+                    <img :src="item.icon" class="absolute top-4 right-4 w-16 h-16" alt="icon">
                 </div>
             </div>
-            <div class="flex gap-2">
-                <p class="text-7xl font-bold">2</p>
-                <div class="">
-                    <p class="text-2xl">Индивидуальный<br> подход</p>
-                    <p class="text-base">Собственное производство<br> позволяет сохранять<br> минимальные цены</p>
+            <a href="tel: +7 952 001-66-26" class="w-full lg:w-fit lg:mt-20">
+                <div class="h-6 py-8 lg:px-10 flex justify-center items-center
+                    text-center bg-[#2C2C2C] hover:bg-[#101010] duration-200
+                    text-white cursor-pointer rounded text-base lg:text-2xl font-medium">
+                    Получить консультацию
                 </div>
-            </div>
-            <div class="flex gap-2">
-                <p class="text-7xl font-bold">3</p>
-                <div class="">
-                    <p class="text-2xl">Поможем<br> с выбором</p>
-                    <p class="text-base">Собственное производство<br> позволяет сохранять<br> минимальные цены</p>
-                </div>
-            </div>
-            <div class="flex gap-2">
-                <p class="text-7xl font-bold">4</p>
-                <div class="">
-                    <p class="text-2xl">Отправка<br> по России</p>
-                    <p class="text-base">Собственное производство<br> позволяет сохранять<br> минимальные цены</p>
-                </div>
-            </div>
+            </a>
         </div>
-        <a href="tel: +7 952 001-66-26">
-            <div class="h-6 w-full lg:w-fit px-10 py-5 flex justify-center items-center bg-[#5179BB] hover:bg-[#3a609d] duration-200 text-white cursor-pointer rounded">
-                Позвонить
-            </div>
-        </a>
     </div>
 </template>
+н
 
 <script setup lang="ts">
-// import Button from '~/components/UI/Button.vue';
+import backgroundImg from '@/assets/img/background2.webp';
+import hands from '@/assets/icons/hands.svg'
+import crown from '@/assets/icons/crown.svg'
+import loop from '@/assets/icons/loop.svg'
+import delivery from '@/assets/icons/delivery.svg'
 
-
+// Массив данных для карточек
+const items = [
+    {
+        title: "Работаем<br> без посредников",
+        description: "Собственное производство <br>позволяет сохранять <br>минимальные цены",
+        icon: hands,
+    },
+    {
+        title: "Индивидуальный<br> подход",
+        description: "Собственное производство<br> позволяет сохранять<br> минимальные цены",
+        icon: crown,
+    },
+    {
+        title: "Поможем<br> с выбором",
+        description: "Собственное производство<br> позволяет сохранять<br> минимальные цены",
+        icon: loop,
+    },
+    {
+        title: "Отправка<br> по России",
+        description: "Собственное производство<br> позволяет сохранять<br> минимальные цены",
+        icon: delivery,
+    },
+];
 </script>

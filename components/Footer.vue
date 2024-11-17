@@ -1,16 +1,41 @@
 <template>
-    <div id="footer" class="h-auto w-full lg:flex lg:justify-center bg-[#312B2F] text-white">
-        <div class=" lg:w-3/4 p-8 lg:p-0 lg:py-6 flex flex-col gap-3 items-start justify-between">
-            <div class="flex gap-3">
-                <a href="tel: +7 952 001-66-26">+7 952 001-66-26</a>
-                <a href="mailto:art-kovka22@mail.ru">art-kovka22@mail.ru</a>
+    <div id="footer" class="h-auto w-full lg:flex lg:justify-center">
+        <div class="lg:w-3/5 p-8 lg:p-0 lg:py-14 flex flex-col gap-3 items-start justify-between">
+            <p class="text-3xl font-bold">Нужна консультация или готовы<br> сделать заказ?</p>
+            <div class="w-full flex flex-col-reverse lg:flex-row justify-between">
+                <div class="flex flex-col gap-3">
+                    <a href="tel: +7 952 001-66-26" class="mt-3 lg:mt-0 text-2xl font-bold underline">+7 952 001-66-26</a>
+                    <a href="mailto:art-kovka22@mail.ru" class="text-2xl font-bold underline">art-kovka22@mail.ru</a>
+                    <p class="text-xl">Алтайский край. г.Барнаул<br> ул. Северный Власихинский пр. 5</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <a href="https://docs.google.com/file/d/157hcVT18hujOG7brEbTIL1U8SY9eS1yG/edit?usp=docslist_api&filetype=msexcel">
+                        <div class="h-6 w-full lg:w-fit px-16 py-6 flex justify-center items-center cursor-pointer rounded bg-white text-2xl text-[#404040] border-[2px] border-[#404040] font-bold">
+                            Каталог
+                        </div>
+                    </a>
+                    <div class="flex justify-between">
+                        <a href="https://web.telegram.org/k/#1711641153"><img src="@/assets/img/tg.png" alt="Телеграмм" class="w-12 h-12 border-[3px] border-black rounded-lg cursor-pointer"></a>
+                        <a href="https://vk.com/art_kovka22"><img src="@/assets/img/vk.png" alt="Группа ВК" class="w-12 h-12 cursor-pointer border-[3px] border-black rounded-lg"></a>
+                        <a href="https://wa.me/79520016626"><img src="@/assets/img/whatsapp.png" alt="WhatsApp" class="w-12 h-12 cursor-pointer border-[3px] border-black rounded-lg"></a>
+                    </div>
+                </div>
             </div>
-            <div class="flex gap-4">
-                <a href="https://web.telegram.org/k/#1711641153"><img src="@/assets/img/tg.png" alt="Телеграмм" class="w-9 h-9 cursor-pointer"></a>
-                <a href="https://vk.com/art_kovka22"><img src="@/assets/img/vk.png" alt="Группа ВК" class="w-9 h-9 cursor-pointer rounded"></a>
-                <a href="https://wa.me/79520016626"><img src="@/assets/img/whatsapp.png" alt="WhatsApp" class="w-9 h-9 cursor-pointer rounded"></a>
+            <div class="">
+                <p class="text-2xl font-medium">Мы скоро появимся на маркетплейсах!</p>
+                <div class="mt-6 flex flex-col lg:flex-row gap-3 lg:gap-10">
+                    <a href="https://docs.google.com/file/d/157hcVT18hujOG7brEbTIL1U8SY9eS1yG/edit?usp=docslist_api&filetype=msexcel">
+                        <div class="h-6 w-full lg:w-fit px-16 py-6 flex justify-center items-center cursor-pointer rounded bg-[#005BFF] text-white font-bold">
+                            OZON (Скоро)
+                        </div>
+                    </a>
+                    <a href="https://docs.google.com/file/d/157hcVT18hujOG7brEbTIL1U8SY9eS1yG/edit?usp=docslist_api&filetype=msexcel">
+                        <div class="h-6 w-full lg:w-fit px-16 py-6 flex justify-center items-center cursor-pointer rounded bg-[#E53FDE] text-white font-bold">
+                            WB (Скоро)
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="">Алтайский край. г.Барнаул</div>
         </div>
     </div>
 </template>

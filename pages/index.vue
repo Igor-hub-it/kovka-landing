@@ -5,11 +5,11 @@
         <SecondBlock />
         <ThirdBlock />
         <FourthBlock />
+        <FivethBlock />
     </div>
 </template>
 
 <script setup lang="ts">
-import FirstBlock from '~/components/FirstBlock.vue';
 
 definePageMeta({
     layout: "main",
