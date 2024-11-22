@@ -64,7 +64,7 @@
             <div class="flex flex-col gap-8 text-3xl pl-12 pt-24">
                 <a @click="scrollTo('about-us')" class="cursor-pointer">О компании</a>
                 <a @click="scrollTo('catalog')" class="cursor-pointer">Каталог</a>
-                <a @click="scrollTo('steps')" class="cursor-pointer">"Этапы работы"</a>
+                <a @click="scrollTo('steps')" class="cursor-pointer">Этапы работы</a>
                 <a @click="scrollTo('reviews')" class="cursor-pointer">Отзывы</a>
                 <a @click="scrollTo('footer')" class="cursor-pointer">Контакты</a>
                 <div class="flex gap-4">
