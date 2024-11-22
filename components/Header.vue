@@ -19,9 +19,9 @@
                 <div class="flex gap-11 items-center">
                     <div class="flex gap-3 items-end">
                         <!-- <p>Мы в соц. сетях:</p> -->
-                        <a href="https://web.telegram.org/k/#1711641153"><img src="@/assets/img/tg.png" alt="Телеграмм" class="w-9 h-9 cursor-pointer"></a>
+                        <a href="https://t.me/artkovkaBRN"><img src="@/assets/img/tg.png" alt="Телеграмм" class="w-9 h-9 cursor-pointer"></a>
                         <a href="https://vk.com/art_kovka22"><img src="@/assets/img/vk.png" alt="Группа ВК" class="w-9 h-9 cursor-pointer rounded"></a>
-                        <a href="https://wa.me/79520016626"><img src="@/assets/img/whatsapp.png" alt="WhatsApp" class="w-9 h-9 cursor-pointer rounded"></a>
+                        <a href="https://chat.whatsapp.com/EGPfhgAMIkkHhJDrYYtxeK"><img src="@/assets/img/whatsapp.png" alt="WhatsApp" class="w-9 h-9 cursor-pointer rounded"></a>
                     </div>
                     <div class="">
                         <p class="">Звоните:</p>
@@ -68,9 +68,9 @@
                 <a @click="scrollTo('reviews')" class="cursor-pointer">Отзывы</a>
                 <a @click="scrollTo('footer')" class="cursor-pointer">Контакты</a>
                 <div class="flex gap-4">
-                    <a href="https://web.telegram.org/k/#1711641153"><img src="@/assets/img/tg.png" alt="Телеграмм" class="w-9 h-9 cursor-pointer"></a>
+                    <a href="https://t.me/artkovkaBRN"><img src="@/assets/img/tg.png" alt="Телеграмм" class="w-9 h-9 cursor-pointer"></a>
                     <a href="https://vk.com/art_kovka22"><img src="@/assets/img/vk.png" alt="Группа ВК" class="w-9 h-9 cursor-pointer rounded"></a>
-                    <a href="https://wa.me/79520016626"><img src="@/assets/img/whatsapp.png" alt="WhatsApp" class="w-9 h-9 cursor-pointer rounded"></a>
+                    <a href="https://chat.whatsapp.com/EGPfhgAMIkkHhJDrYYtxeK"><img src="@/assets/img/whatsapp.png" alt="WhatsApp" class="w-9 h-9 cursor-pointer rounded"></a>
                 </div>
                 <a href="tel: +7 952 001-66-26">+7 952 001-66-26</a>
                 <a href="mailto:art-kovka22@mail.ru">art-kovka22@mail.ru</a>

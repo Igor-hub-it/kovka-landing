@@ -35,7 +35,16 @@
                     </div>
                 </div>
             </div>
-            <a href="https://docs.google.com/file/d/157hcVT18hujOG7brEbTIL1U8SY9eS1yG/edit?usp=docslist_api&filetype=msexcel">
+            <a class="lg:hidden" href="https://docs.google.com/spreadsheets/d/1TMbqFRvjjvPXuiLFWGCVd46HqE0HaBE39QppfNPbOno/edit?gid=0#gid=0">
+                <div class="
+                    h-6 w-full lg:w-fit lg:mt-6 px-10 py-8 lg:px-10 flex justify-center items-center 
+                    cursor-pointer rounded bg-white text-[#000000] border-[2px]
+                    border-[#404040] text-xl lg:text-2xl font-medium"
+                >
+                    Весь каталог
+                </div>
+            </a>
+            <a class="hidden lg:block" href="https://docs.google.com/spreadsheets/d/1TMbqFRvjjvPXuiLFWGCVd46HqE0HaBE39QppfNPbOno/edit?gid=1117172338#gid=1117172338">
                 <div class="
                     h-6 w-full lg:w-fit lg:mt-6 px-10 py-8 lg:px-10 flex justify-center items-center 
                     cursor-pointer rounded bg-white text-[#000000] border-[2px]
