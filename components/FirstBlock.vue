@@ -2,7 +2,7 @@
     <div class="h-auto w-full pt-[90px] pb-10 lg:py-48 relative flex justify-center bg-cover bg-center" :style="{ backgroundImage: `url(${backgroundImg})` }">
         <div class="w-5/6 lg:w-3/5 relative flex flex-col justify-center gap-4 lg:gap-12 text-white">
             <p class="text-3xl lg:text-4xl font-medium lg:font-bold">Кованые изделия<br> собственного производства</p>
-            <p class="text-lg lg:text-3xl">Скидка 10% на первый заказ</p>
+            <p class="w-2/5 lg:w-full text-lg lg:text-3xl">Скидка 10% на первый заказ</p>
             <div class="flex gap-3 lg:gap-10 flex-col lg:flex-row">
                 <a class="lg:hidden" href="https://docs.google.com/spreadsheets/d/1TMbqFRvjjvPXuiLFWGCVd46HqE0HaBE39QppfNPbOno/edit?gid=0#gid=0">
                     <div class="

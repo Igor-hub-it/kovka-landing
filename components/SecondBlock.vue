@@ -31,7 +31,7 @@
             <a href="tel: +7 952 001-66-26" class="w-full lg:w-fit lg:mt-20">
                 <div class="h-6 py-8 lg:px-10 flex justify-center items-center
                     text-center bg-[#2C2C2C] hover:bg-[#101010] duration-200
-                    text-white cursor-pointer rounded text-base lg:text-2xl font-medium">
+                    text-white cursor-pointer rounded text-xl lg:text-2xl font-medium">
                     Получить консультацию
                 </div>
             </a>

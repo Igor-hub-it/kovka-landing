@@ -36,14 +36,14 @@
                     Вы оформляете доставку или забираете заказ самостоятельно
                 </div>
             </div>
-            <!-- <a href="tel: +7 952 001-66-26" class="mt-20 w-fit">
-                <div class="h-6 w-full lg:w-fit px-9 py-8 flex justify-center 
+            <a href="tel: +7 952 001-66-26" class="mt-5 lg:mt-20 w-full lg:w-fit">
+                <div class="h-6 px-9 py-8 flex justify-center 
                     items-center bg-[#2C2C2C] hover:bg-[#101010] duration-200
-                    text-white cursor-pointer rounded-2xl text-2xl font-medium"
+                    text-white cursor-pointer rounded text-xl font-medium"
                 >
-                    Получить консультацию
+                    Уточнить детали
                 </div>
-            </a> -->
+            </a>
         </div>
     </div>
 </template>

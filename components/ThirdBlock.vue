@@ -39,7 +39,7 @@
                 <div class="
                     h-6 w-full lg:w-fit lg:mt-6 px-10 py-8 lg:px-10 flex justify-center items-center 
                     cursor-pointer rounded bg-white text-[#000000] border-[2px]
-                    border-[#404040] text-base lg:text-2xl font-medium"
+                    border-[#404040] text-xl lg:text-2xl font-medium"
                 >
                     Весь каталог
                 </div>
