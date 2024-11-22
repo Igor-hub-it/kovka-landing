@@ -2,7 +2,12 @@
     <div 
         id="catalog" 
         class="h-auto w-full py-10 lg:py-20 flex flex-col justify-center items-center gap-3" 
-        :style="{ backgroundImage: `url(${backgroundImg})` }"
+        :style="{ 
+            backgroundImage: `url(${backgroundImg})`,
+            backgroundSize: 'cover', 
+            backgroundRepeat: 'no-repeat', 
+            backgroundPosition: 'center' 
+        }"
     >
         <div class="w-4/5 lg:w-3/5 flex flex-col justify-center gap-3">
             <p class="text-3xl lg:text-5xl font-medium text-white">Товары</p>
@@ -12,15 +17,15 @@
                     :space-between="50"
                     class="w-[100%] block lg:hidden"
                 >
-                <swiper-slide v-for="product of productList" :key="product.text">
-                    <div class="w-full h-72 relative border-[4px] border-[#FF9000] rounded">
-                        <img class="p-6 max-h-52 w-auto" :src="product.src" alt="">
-                        <div class="absolute bottom-3 px-3 text-white rounded">
-                            <p class="text-lg font-medium">{{ product.text }}</p>
-                            <p>от {{ product.price }}&#8381; за шт</p>
+                    <swiper-slide v-for="product of productList" :key="product.text">
+                        <div class="w-full h-72 relative border-[4px] border-[#FF9000] rounded">
+                            <img class="p-6 max-h-52 w-auto" :src="product.src" alt="">
+                            <div class="absolute bottom-3 px-3 text-white rounded">
+                                <p class="text-lg font-medium">{{ product.text }}</p>
+                                <p>от {{ product.price }}&#8381; за шт</p>
+                            </div>
                         </div>
-                    </div>
-                    <img class="w-12 absolute bottom-1 right-1 z-10 rounded-tl-lg" src="@/assets/gif/swipe-left.gif" alt="">
+                        <img class="w-12 absolute bottom-1 right-1 z-10 rounded-tl-lg" src="@/assets/gif/swipe-left.gif" alt="">
                     </swiper-slide>
                 </swiper>
             </div>

@@ -24,7 +24,7 @@
                     Выбираете нужные<br>
                     элементы в каталоге
                 </div>
-                <div class="absolute -top-2 left-[260px] font-bold">или</div>
+                <div class="absolute -top-2 left-[260px] lg:left-[247px] font-bold">или</div>
                 <div class="absolute top-12 right-0 lg:right-auto lg:-top-7 lg:left-72 px-5 py-2 rounded bg-[#262628] border border-black text-white">
                     Помогаем подобрать нужную<br>
                     композицию или набор элементов
