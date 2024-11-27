@@ -9,15 +9,20 @@
                     <p class="text-xl">Алтайский край. г.Барнаул<br> ул. Северный Власихинский пр. 5</p>
                 </div>
                 <div class="flex flex-col gap-3">
-                    <a href="https://docs.google.com/file/d/157hcVT18hujOG7brEbTIL1U8SY9eS1yG/edit?usp=docslist_api&filetype=msexcel">
+                    <a class="lg:hidden" href="https://docs.google.com/spreadsheets/d/1TMbqFRvjjvPXuiLFWGCVd46HqE0HaBE39QppfNPbOno/edit?gid=0#gid=0">
+                        <div class="h-6 w-full lg:w-fit px-16 py-6 flex justify-center items-center cursor-pointer rounded bg-white text-2xl text-[#404040] border-[2px] border-[#404040] font-bold">
+                            Каталог
+                        </div>
+                    </a>
+                    <a class="hidden lg:block" href="https://docs.google.com/spreadsheets/d/1TMbqFRvjjvPXuiLFWGCVd46HqE0HaBE39QppfNPbOno/edit?gid=1117172338#gid=1117172338">
                         <div class="h-6 w-full lg:w-fit px-16 py-6 flex justify-center items-center cursor-pointer rounded bg-white text-2xl text-[#404040] border-[2px] border-[#404040] font-bold">
                             Каталог
                         </div>
                     </a>
                     <div class="flex justify-between">
-                        <a href="https://web.telegram.org/k/#1711641153"><img src="@/assets/img/tg.png" alt="Телеграмм" class="w-12 h-12 rounded-lg cursor-pointer"></a>
+                        <a href="https://t.me/artkovkaBRN"><img src="@/assets/img/tg.png" alt="Телеграмм" class="w-12 h-12 rounded-lg cursor-pointer"></a>
                         <a href="https://vk.com/art_kovka22"><img src="@/assets/img/vk.png" alt="Группа ВК" class="w-12 h-12 cursor-pointer rounded-lg"></a>
-                        <a href="https://wa.me/79520016626"><img src="@/assets/img/whatsapp.png" alt="WhatsApp" class="w-12 h-12 cursor-pointer rounded-lg"></a>
+                        <a href="https://chat.whatsapp.com/EGPfhgAMIkkHhJDrYYtxeK"><img src="@/assets/img/whatsapp.png" alt="WhatsApp" class="w-12 h-12 cursor-pointer rounded-lg"></a>
                     </div>
                 </div>
             </div>

@@ -32,7 +32,9 @@
             <div class="hidden mt-5 lg:grid grid-cols-3 grid-rows-3 gap-5">
                 <div v-for="product of productList" :key="product.text" class="">
                     <div class="relative w-full h-60 border-[4px] border-[#FF9000] rounded text-white">
-                        <img class="p-6 max-h-40 w-auto" :src="product.src" alt="">
+                        <div class="w-full flex justify-center">
+                            <img class="p-6 max-h-40 w-auto" :src="product.src" alt="">
+                        </div>
                         <div class="absolute bottom-3 px-3 rounded">
                             <p class="text-lg font-medium">{{ product.text }}</p>
                             <p>от {{ product.price }}&#8381; за шт</p>
