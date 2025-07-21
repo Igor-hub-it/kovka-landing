@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="">
-                <p class="text-2xl font-medium">Мы скоро появимся на маркетплейсах!</p>
+                <p class="text-2xl font-medium">Мы на маркетплейсах!</p>
                 <div class="mt-6 flex flex-col lg:flex-row gap-3 lg:gap-10">
                     <a href="https://www.ozon.ru/seller/art-kovka-2865165/?miniapp=seller_2865165">
                         <div class="h-6 w-full lg:w-fit px-16 py-6 flex justify-center items-center cursor-pointer rounded bg-[#005BFF] text-white font-bold">
