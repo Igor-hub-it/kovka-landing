@@ -1,21 +1,4 @@
 <template>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();
-    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-    ym(99412552, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            ecommerce:"dataLayer"
-    });
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/99412552" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
     <div class="flex flex-col items-center ">
         <FirstBlock />
         <SecondBlock />
@@ -26,9 +9,32 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue'
 
 definePageMeta({
     layout: "main",
 })
 
+onMounted(() => {
+  (function(m: any, e: Document, t: string, r: string, i: string, k?: HTMLScriptElement, a?: Element){
+    (m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)});
+    (m[i].l=1*new Date().getTime());
+    for (let j = 0; j < e.scripts.length; j++) {if ((e.scripts[j] as HTMLScriptElement).src === r) { return; }}
+    k = e.createElement(t) as HTMLScriptElement;
+    a = e.getElementsByTagName(t)[0];
+    k.async = true;
+    k.src = r;
+    if (a && a.parentNode) {
+      a.parentNode.insertBefore(k, a);
+    }
+  })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  // @ts-ignore
+  window.ym && window.ym(99412552, "init", {
+    clickmap:true,
+    trackLinks:true,
+    accurateTrackBounce:true,
+    ecommerce:"dataLayer"
+  });
+})
 </script>

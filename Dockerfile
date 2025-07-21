@@ -10,7 +10,7 @@ COPY package*.json ./
 # Устанавливаем зависимости
 RUN npm install
 
-RUN chmod +x node_modules/.bin/nuxt
+# RUN chmod +x node_modules/.bin/nuxt
 
 # Копируем остальные файлы проекта
 COPY . .
@@ -21,5 +21,4 @@ RUN npm run build
 # Указываем порт, который будет использоваться
 EXPOSE 3000
 
-# Команда для запуска приложения
-CMD ["npm", "run", "start"]
+CMD ["npx", "nuxi", "preview"]

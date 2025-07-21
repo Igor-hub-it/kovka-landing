@@ -29,14 +29,14 @@
             <div class="">
                 <p class="text-2xl font-medium">Мы скоро появимся на маркетплейсах!</p>
                 <div class="mt-6 flex flex-col lg:flex-row gap-3 lg:gap-10">
-                    <a href="https://docs.google.com/file/d/157hcVT18hujOG7brEbTIL1U8SY9eS1yG/edit?usp=docslist_api&filetype=msexcel">
+                    <a href="https://www.ozon.ru/seller/art-kovka-2865165/?miniapp=seller_2865165">
                         <div class="h-6 w-full lg:w-fit px-16 py-6 flex justify-center items-center cursor-pointer rounded bg-[#005BFF] text-white font-bold">
-                            OZON (Скоро)
+                            OZON
                         </div>
                     </a>
-                    <a href="https://docs.google.com/file/d/157hcVT18hujOG7brEbTIL1U8SY9eS1yG/edit?usp=docslist_api&filetype=msexcel">
+                    <a href="https://www.wildberries.ru/seller/250022049">
                         <div class="h-6 w-full lg:w-fit px-16 py-6 flex justify-center items-center cursor-pointer rounded bg-[#E53FDE] text-white font-bold">
-                            WB (Скоро)
+                            WB
                         </div>
                     </a>
                 </div>
