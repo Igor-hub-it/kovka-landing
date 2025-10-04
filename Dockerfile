@@ -1,10 +1,6 @@
-# Используем официальный образ Node.js в качестве базового
-FROM node:18-alpine
+# Этап сборки
+FROM node:18-alpine AS builder
 
-# Устанавливаем wget для health check
-RUN apk add --no-cache wget
-
-# Устанавливаем рабочую директорию внутри контейнера
 WORKDIR /app
 
 # Копируем файлы package.json и package-lock.json
@@ -19,20 +15,31 @@ COPY . .
 # Собираем приложение
 RUN npm run build
 
-# Создаем пользователя для безопасности
-RUN addgroup -g 1001 -S nodejs
-RUN adduser -S nuxt -u 1001
+# Финальный этап - nginx для статического сайта
+FROM nginx:alpine
 
-# Меняем владельца файлов
-RUN chown -R nuxt:nodejs /app
-USER nuxt
+# Устанавливаем wget для health check
+RUN apk add --no-cache wget
 
-# Указываем порт, который будет использоваться
-EXPOSE 3000
+# Копируем статические файлы
+COPY --from=builder /app/.output/public /usr/share/nginx/html
+
+# Создаем конфигурацию nginx
+RUN echo 'server { \
+    listen 80; \
+    server_name localhost; \
+    root /usr/share/nginx/html; \
+    index index.html; \
+    location / { \
+        try_files $uri $uri/ /index.html; \
+    } \
+}' > /etc/nginx/conf.d/default.conf
+
+# Указываем порт
+EXPOSE 80
 
 # Добавляем health check
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-  CMD wget --no-verbose --tries=1 --spider http://localhost:3000/ || exit 1
+  CMD wget --no-verbose --tries=1 --spider http://localhost/ || exit 1
 
-# Используем exec form для правильной обработки сигналов
-CMD ["node", ".output/server/index.mjs"]
+CMD ["nginx", "-g", "daemon off;"]
