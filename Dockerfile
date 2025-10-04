@@ -31,8 +31,8 @@ RUN adduser -S nuxt -u 1001
 COPY --from=builder --chown=nuxt:nodejs /app/.output /app/.output
 COPY --from=builder --chown=nuxt:nodejs /app/package*.json /app/
 
-# Устанавливаем только production зависимости
-RUN npm install --omit=dev
+# Устанавливаем только production зависимости, пропуская postinstall
+RUN npm install --omit=dev --ignore-scripts
 
 # Переключаемся на пользователя nuxt
 USER nuxt
