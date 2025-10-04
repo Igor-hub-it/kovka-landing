@@ -8,9 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Устанавливаем зависимости
-RUN npm install
-
-# RUN chmod +x node_modules/.bin/nuxt
+RUN npm install --only=production
 
 # Копируем остальные файлы проекта
 COPY . .
@@ -18,7 +16,20 @@ COPY . .
 # Собираем приложение
 RUN npm run build
 
+# Создаем пользователя для безопасности
+RUN addgroup -g 1001 -S nodejs
+RUN adduser -S nuxt -u 1001
+
+# Меняем владельца файлов
+RUN chown -R nuxt:nodejs /app
+USER nuxt
+
 # Указываем порт, который будет использоваться
 EXPOSE 3000
 
-CMD ["npx", "nuxi", "preview"]
+# Добавляем health check
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+  CMD wget --no-verbose --tries=1 --spider http://localhost:3000/ || exit 1
+
+# Используем exec form для правильной обработки сигналов
+CMD ["npx", "nuxi", "preview", "--host", "0.0.0.0"]

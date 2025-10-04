@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 services:
   nuxt-app:
     build: .
@@ -6,4 +6,23 @@ services:
       - '3000:3000'
     environment:
       - NODE_ENV=production
-    # command: npm run start  # Запускаем приложение в режиме production
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: '0.5'
+        reservations:
+          memory: 256M
+          cpus: '0.25'
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

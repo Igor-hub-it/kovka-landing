@@ -1,0 +1,15 @@
+[Unit]
+Description=Docker Container Monitor for Kovka Landing
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/path/to/your/project
+ExecStart=/path/to/your/project/docker-monitor.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
