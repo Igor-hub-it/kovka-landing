@@ -1,14 +1,13 @@
-# Используем официальный образ Node.js в качестве базового
-FROM node:18-alpine
+# Этап сборки
+FROM node:18-alpine AS builder
 
-# Устанавливаем рабочую директорию внутри контейнера
 WORKDIR /app
 
 # Копируем файлы package.json и package-lock.json
 COPY package*.json ./
 
-# Устанавливаем зависимости
-RUN npm install --only=production
+# Устанавливаем все зависимости (включая dev для сборки)
+RUN npm install
 
 # Копируем остальные файлы проекта
 COPY . .
@@ -16,12 +15,26 @@ COPY . .
 # Собираем приложение
 RUN npm run build
 
+# Финальный этап
+FROM node:18-alpine AS runner
+
+WORKDIR /app
+
+# Устанавливаем wget для health check
+RUN apk add --no-cache wget
+
 # Создаем пользователя для безопасности
 RUN addgroup -g 1001 -S nodejs
 RUN adduser -S nuxt -u 1001
 
-# Меняем владельца файлов
-RUN chown -R nuxt:nodejs /app
+# Копируем собранное приложение из этапа сборки
+COPY --from=builder --chown=nuxt:nodejs /app/.output /app/.output
+COPY --from=builder --chown=nuxt:nodejs /app/package*.json /app/
+
+# Устанавливаем только production зависимости
+RUN npm install --omit=dev
+
+# Переключаемся на пользователя nuxt
 USER nuxt
 
 # Указываем порт, который будет использоваться
