@@ -31,7 +31,7 @@
                     </div>
                 </a>
             </div>
-            <div class="flex gap-3 lg:gap-4">
+            <div class="flex items-center gap-3 lg:gap-4">
                 <a href="https://www.ozon.ru/seller/art-kovka-2865165/?miniapp=seller_2865165" target="_blank" rel="noopener noreferrer">
                     <img :src="ozonImg" alt="Ozon" class="w-12 h-12 rounded-lg hover:opacity-80 transition-opacity duration-200">
                 </a>
@@ -41,10 +41,16 @@
                 <a href="https://market.yandex.ru/business--artkovka/216343313" target="_blank" rel="noopener noreferrer">
                     <img :src="marketImg" alt="Яндекс.Маркет" class="w-12 h-12 rounded-lg hover:opacity-80 transition-opacity duration-200">
                 </a>
+                <div class="flex items-center gap-2 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4 lg:w-5 lg:h-5 text-[#FF9000] fill-current rotate-180">
+                        <path d="M13.172 12l-4.95-4.95a1 1 0 111.414-1.414l6.364 6.364a1 1 0 010 1.414l-6.364 6.364a1 1 0 11-1.414-1.414L13.172 12z"/>
+                    </svg>
+                    <span class="text-sm lg:text-base font-medium">Заказывай тут</span>
+                </div>
             </div>
             <img class="hidden lg:block absolute h-[550px] -top-32 -right-10" :src="mainImg" alt="">
             <img class="block lg:hidden absolute h-52 top-28 right-0 z-10" :src="mainImgMobile1" alt="">
-            <img class="block lg:hidden absolute h-44 top-28 -left-12 z-10" :src="mainImgMobile2" alt="">
+            <img class="block lg:hidden absolute h-44 top-36 -left-12 z-10" :src="mainImgMobile2" alt="">
             <img class="block lg:hidden absolute h-28 top-8 right-12 -z-10" :src="mainImgMobile3" alt="">
         </div>
     </div>
