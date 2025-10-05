@@ -31,6 +31,7 @@
                     </p>
                 </div>
             </div>
+            <!-- <p class="text-2xl lg:text-4xl font-medium text-white">Более 1000 отправленных заказов в 2025 году</p> -->
             <div class="w-full lg:w-3/5 block">
                 <swiper
                     :modules="[Autoplay]"
@@ -61,9 +62,9 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay } from 'swiper/modules';
 
 import backgroundImg from '@/assets/img/background3.webp';
-import image1 from '@/assets/img/review_1.png'
-import image2 from '@/assets/img/review_2.png'
-import image3 from '@/assets/img/review_3.png'
+import image1 from '@/assets/img/review_1.webp'
+import image2 from '@/assets/img/review_2.webp'
+import image3 from '@/assets/img/review_3.webp'
 
 const reviewList = [
     { text: '1', src: image1 },

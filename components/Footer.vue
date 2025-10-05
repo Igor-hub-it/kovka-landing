@@ -39,6 +39,11 @@
                             WB
                         </div>
                     </a>
+                    <a href="https://market.yandex.ru/business--artkovka/216343313">
+                        <div class="h-6 w-full lg:w-fit px-16 py-6 flex justify-center items-center cursor-pointer rounded bg-[#FF9000] text-white font-bold">
+                            ЯМаркет
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

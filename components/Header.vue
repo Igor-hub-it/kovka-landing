@@ -6,8 +6,7 @@
                 <div class="ml-3">
                     <p class="text-xl font-semibold">Art-Kovka</p>
                     <p class="hidden lg:block text-sm font-medium leading-5">
-                        Холодная ковка<br>
-                        под заказ
+                        Холодная ковка
                     </p>
                     <p class="hidden lg:block mt-2 text-xs italic">
                         Произведено в <br>
